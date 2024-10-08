@@ -5,17 +5,32 @@
     height: 100vh;
     background: #f4f4f4;
 }
+/* Centrar el título del Card */
+.login-card .p-card-title {
+    text-align: center;
+}
 
 .login-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 400px; /* Ajusta el tamaño máximo */
+    max-height: 400px;
+    height: 100%;
     padding: 2rem;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px #660099;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     background: white;
-    align-items: center; 
-    text-align: center;
+    transform: scale(1); /* Escala por defecto al 100% */
+    transition: transform 0.3s ease; /* Transición suave */
+    box-shadow: 0 2px 8px rgba(138, 43, 226, 0.5); 
 }
+
+/* Amplía la tarjeta cuando se necesite */
+.login-card:hover {
+    transform: scale(1.1); /* Escala al 110% */
+}
+
 
 .login-form {
     display: flex;
