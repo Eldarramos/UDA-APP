@@ -20,8 +20,8 @@ const Login = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate();
 
-    const CLIENT_ID = '422356463744-6ph6gvs0ge55fqli9nkv09lhfpu0amjv.apps.googleusercontent.com/';
-    //const CLIENT_ID=''
+    const CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+    //const CLIENT_ID='422356463744-6ph6gvs0ge55fqli9nkv09lhfpu0amjv.apps.googleusercontent.com'
     const handleLogin = (e) => {
         e.preventDefault();
         // Aquí puedes agregar la lógica para autenticar al usuario
