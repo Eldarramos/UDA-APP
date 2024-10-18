@@ -18,4 +18,4 @@ Para Back
 ### `Paso 1.- npm install`
 
 
-### `Paso 2.- npx nodemon index.js
+### `Paso 2.- npx nodemon index.js`
